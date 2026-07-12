@@ -1,7 +1,7 @@
 const APPLICATION_CATEGORIES = [
   {
     title: "Delege",
-    url: "https://forms.google.com/KATILIMCI-FORM-LINKI",
+    url: "https://forms.gle/vAxf3TLgnD79Q2T48",
   },
   {
     title: "Organizasyon Ekibi",
