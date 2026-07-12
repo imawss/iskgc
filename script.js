@@ -4,11 +4,11 @@ const APPLICATION_CATEGORIES = [
     url: "https://forms.gle/vAxf3TLgnD79Q2T48",
   },
   {
-    title: "Organizasyon Ekibi",
+    title: "Gözlemci",
     url: "https://forms.google.com/ORGANIZASYON-FORM-LINKI",
   },
   {
-    title: "Basın ve Medya",
+    title: "Basın",
     url: "https://forms.google.com/BASIN-FORM-LINKI",
   },
 ];
