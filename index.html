@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İSKGÇ'26 — Gençlik Çalıştayı</title>
+  <meta name="description" content="İSKGÇ'26 Gençlik Çalıştayı — 4-5-6 Eylül 2026, Sınav Koleji. Başvurular açık.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <img src="logo.png" alt="İSKGÇ'26 Logo" class="brand-logo">
+        <span class="brand-text">İSKGÇ<span class="accent">'26</span></span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#hakkinda" class="nav-link">Hakkında</a>
+        <a href="#konum" class="nav-link">Konum</a>
+        <a href="#sss" class="nav-link">S.S.S.</a>
+        <a href="#basvuru" class="nav-link nav-cta">Başvur</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-stripes" aria-hidden="true">
+      <span class="stripe stripe-red"></span>
+      <span class="stripe stripe-white"></span>
+      <span class="stripe stripe-blue"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <img src="logo.png" alt="İSKGÇ'26" class="hero-logo">
+      <p class="hero-kicker">Sınav Koleji himayesinde</p>
+      <h1 class="hero-title">Gençlik <span class="accent">Çalıştayı</span></h1>
+      <p class="hero-sub"></p>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Tarih</span>
+          <span class="meta-value">4 – 5 – 6 Eylül 2026</span>
+        </div>
+        <div class="meta-divider" aria-hidden="true"></div>
+        <div class="meta-item">
+          <span class="meta-label">Yer</span>
+          <span class="meta-value">Sınav Koleji</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#basvuru" class="btn btn-primary">Hemen Başvur</a>
+        <a href="#hakkinda" class="btn btn-ghost">Daha Fazla Bilgi</a>
+      </div>
+
+      <div class="countdown" id="countdown" aria-label="Etkinliğe kalan süre">
+        <div class="count-box"><span class="count-num" id="cdDays">0</span><span class="count-label">Gün</span></div>
+        <div class="count-box"><span class="count-num" id="cdHours">0</span><span class="count-label">Saat</span></div>
+        <div class="count-box"><span class="count-num" id="cdMins">0</span><span class="count-label">Dakika</span></div>
+        <div class="count-box"><span class="count-num" id="cdSecs">0</span><span class="count-label">Saniye</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hakkinda">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Hakkında</span>
+        <h2 class="section-title">İSKGÇ Nedir?</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>İSKGÇ'26, Sınav Koleji çatısı altında düzenlenen; gençlerin güncel meseleler üzerine fikir ürettiği, tartıştığı ve çözüm önerileri geliştirdiği üç günlük bir gençlik çalıştayıdır.</p>
+          <p>Katılımcılar, alanında yetkin konuşmacılarla bir araya gelecek; atölye çalışmaları, panel oturumları ve grup tartışmalarıyla hem kendilerini geliştirecek hem de yeni insanlarla tanışma fırsatı yakalayacaklar.</p>
+        </div>
+
+        <div class="feature-cards">
+          <div class="feature-card reveal">
+            <div class="feature-num">01</div>
+            <h3>Komiteler</h3>
+            <p>Güncel gündem maddelerinin ele alındığı, her seviyeye uygun komitelerde ülkeni temsil et.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">02</div>
+            <h3>Kriz Komitesi</h3>
+            <p>Anlık gelişmelere hızlı direktiflerle yanıt vereceğin, yüksek tempolu kriz deneyimi.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">03</div>
+            <h3>Diplomasi ve Münazara</h3>
+            <p>Karar tasarıları yaz, ittifaklar kur, kürsüde konuşarak müzakere becerilerini geliştir.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">04</div>
+            <h3>Sosyal Etkinlikler</h3>
+            <p>Oturum aralarında ve delege partisinde farklı okullardan delegelerle tanış.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="konum">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Konum</span>
+        <h2 class="section-title">Nerede Buluşuyoruz?</h2>
+      </div>
+
+      <div class="location-grid reveal">
+        <div class="location-card">
+          <div class="location-info">
+            <h3>Sınav Koleji</h3>
+            <p>Etkinliğimiz Sınav Koleji kampüsünde gerçekleşecektir. Detaylı ulaşım bilgileri, başvurusu onaylanan katılımcılarla e-posta yoluyla paylaşılacaktır.</p>
+          </div>
+        </div>
+
+        <div class="location-map">
+          <iframe
+            src="https://maps.google.com/maps?q=%C4%B0zmir%20S%C4%B1nav%20Koleji&z=15&output=embed"
+            title="İzmir Sınav Koleji Haritası"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sss">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">S.S.S.</span>
+        <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div class="faq reveal">
+        <details class="faq-item">
+          <summary>Kimler başvurabilir?</summary>
+          <p>Çalıştayımıza lise öğrencileri başvurabilir. Farklı okullardan katılım teşvik edilmektedir.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Başvurular nasıl değerlendiriliyor?</summary>
+          <p>Başvurular, form üzerinden alınan bilgiler doğrultusunda organizasyon ekibi tarafından değerlendirilir. Sonuçlar e-posta ile bildirilir.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Sertifika verilecek mi?</summary>
+          <p>Evet, çalıştayı tamamlayan tüm katılımcılara katılım sertifikası verilecektir.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="basvuru">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Aramıza Katıl</h2>
+      <p class="cta-text">Sana uygun kategoriyi seç, başvurunu yap!</p>
+      <div class="apply-grid" id="applyCategories"></div>
+      <p class="cta-note">Başvurular Google Forms üzerinden alınmaktadır.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="İSKGÇ'26" class="footer-logo">
+        <span>İSKGÇ<span class="accent">'26</span> Gençlik Çalıştayı</span>
+      </div>
+      <p class="footer-note">4 – 5 – 6 Eylül 2026 · Sınav Koleji</p>
+      <p class="footer-copy">© 2026 İSKGÇ. Tüm hakları saklıdır.</p>
+      <p class="footer-dev"><a href="https://instagram.com/jesusawss" target="_blank" rel="noopener">Aras ARKAN</a> tarafından geliştirilmiştir.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
