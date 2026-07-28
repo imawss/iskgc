@@ -1,19 +1,36 @@
+const ICONS = {
+  delege:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>',
+  gozlemci:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
+  basin:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><path d="M12 18v3"/><path d="M8 21h8"/></svg>',
+  vekil:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3"/><path d="M22 20v-1a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg>',
+};
+
 const APPLICATION_CATEGORIES = [
   {
     title: "Delege",
-    url: "https://forms.gle/vAxf3TLgnD79Q2T48",
+    icon: ICONS.delege,
+    url: "https://forms.gle/j9rKdTuR4Z9uPAJD6",
   },
   {
     title: "Gözlemci",
-    url: "https://forms.google.com/ORGANIZASYON-FORM-LINKI",
+    icon: ICONS.gozlemci,
+    url: "https://forms.gle/BmUw6aWdP1T2Czj19",
   },
   {
     title: "Basın",
-    url: "https://forms.google.com/BASIN-FORM-LINKI",
+    icon: ICONS.basin,
+    url: "https://forms.gle/mBvwGSRwbhCr3ffh9",
+  },
+  {
+    title: "Vekil",
+    icon: ICONS.vekil,
+    url: "https://forms.gle/mBvwGSRwbhCr3ffh9",
   },
 ];
-
-const EVENT_DATE = new Date(2026, 8, 4, 9, 0, 0);
 
 const applyGrid = document.getElementById("applyCategories");
 
@@ -24,6 +41,7 @@ APPLICATION_CATEGORIES.forEach((cat) => {
   card.target = "_blank";
   card.rel = "noopener";
   card.innerHTML = `
+    <span class="apply-card-icon">${cat.icon}</span>
     <h3 class="apply-card-title">${cat.title}</h3>
     <span class="apply-card-btn">Başvur</span>
   `;
@@ -52,32 +70,6 @@ const header = document.getElementById("siteHeader");
 window.addEventListener("scroll", () => {
   header.classList.toggle("scrolled", window.scrollY > 40);
 }, { passive: true });
-
-const cdDays = document.getElementById("cdDays");
-const cdHours = document.getElementById("cdHours");
-const cdMins = document.getElementById("cdMins");
-const cdSecs = document.getElementById("cdSecs");
-
-function updateCountdown() {
-  const diff = EVENT_DATE - new Date();
-
-  if (diff <= 0) {
-    cdDays.textContent = "0";
-    cdHours.textContent = "0";
-    cdMins.textContent = "0";
-    cdSecs.textContent = "0";
-    clearInterval(countdownTimer);
-    return;
-  }
-
-  cdDays.textContent = Math.floor(diff / 86400000);
-  cdHours.textContent = Math.floor((diff % 86400000) / 3600000);
-  cdMins.textContent = Math.floor((diff % 3600000) / 60000);
-  cdSecs.textContent = Math.floor((diff % 60000) / 1000);
-}
-
-updateCountdown();
-const countdownTimer = setInterval(updateCountdown, 1000);
 
 const observer = new IntersectionObserver(
   (entries) => {
