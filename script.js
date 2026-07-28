@@ -28,7 +28,7 @@ const APPLICATION_CATEGORIES = [
   {
     title: "Vekil",
     icon: ICONS.vekil,
-    url: "https://forms.gle/mBvwGSRwbhCr3ffh9",
+    url: "https://forms.gle/259QTRTC8cNo5ZSVA",
   },
 ];
 
