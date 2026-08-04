@@ -7,6 +7,8 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><path d="M12 18v3"/><path d="M8 21h8"/></svg>',
   vekil:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3"/><path d="M22 20v-1a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg>',
+  delegasyon:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18"/><path d="M5 4h13l-3 4 3 4H5"/></svg>',
 };
 
 const APPLICATION_CATEGORIES = [
@@ -14,6 +16,11 @@ const APPLICATION_CATEGORIES = [
     title: "Delege",
     icon: ICONS.delege,
     url: "https://forms.gle/j9rKdTuR4Z9uPAJD6",
+  },
+  {
+    title: "Delegasyon",
+    icon: ICONS.delegasyon,
+    url: "https://forms.gle/WX6RxmFyRh1Y2CkKA",
   },
   {
     title: "Gözlemci",
